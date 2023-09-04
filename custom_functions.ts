@@ -12,16 +12,12 @@ namespace CodeCosmos {
     export function agentMoveForward() {
         amountOfMovesUsed++;
         const detectPostion = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
-        if (blocks.testForBlock(GLOWSTONE, detectPostion)) {
-            player.say('juiste blok')
+        if (blocks.testForBlock(GLOWSTONE, detectPostion) && !agent.detect(AgentDetection.Block, FORWARD)) {
             levelCheck++;
-            player.execute('scoreboard players set @a levelCheck' + levelCheck)
         } else {
-            player.execute('scoreboard players remove @a levelCheck 1')
-            player.say('foute blok')
-
+            levelCheck = 0;
         }
-        player.say('hier')
+        player.execute('scoreboard players set @a levelCheck ' + levelCheck)
         agent.move(FORWARD, 1);
     }
 
