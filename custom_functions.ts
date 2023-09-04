@@ -12,7 +12,7 @@ namespace CodeCosmos {
     export function agentMoveForward() {
         amountOfMovesUsed++;
         const detectPostion = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
-        if (blocks.testForBlock(124, detectPostion)) {
+        if (blocks.testForBlock(GLOWSTONE, detectPostion)) {
             player.say('juiste blok')
             levelCheck++;
             player.execute('scoreboard players set @a levelCheck' + levelCheck)
