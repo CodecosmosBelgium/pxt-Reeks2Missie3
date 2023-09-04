@@ -13,11 +13,15 @@ namespace CodeCosmos {
         amountOfMovesUsed++;
         const detectPostion = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
         if (blocks.testForBlock(124, detectPostion)) {
+            player.say('juiste blok')
             levelCheck++;
             player.execute('scoreboard players set @a levelCheck' + levelCheck)
         } else {
             player.execute('scoreboard players remove @a levelCheck 1')
+            player.say('foute blok')
+
         }
+        player.say('hier')
         agent.move(FORWARD, 1);
     }
 
