@@ -8,11 +8,12 @@ player.onChat("run", function () {
 CodeCosmos.startingPosition()
 CodeCosmos.agentMoveForward()
 CodeCosmos.collectPlastic()
+agent.turn(TurnDirection.Left)
 ```
 ```template
 player.onChat("level1", function () {
 CodeCosmos.startingPosition()
 })
 ```
-## Velden beplanten
+## Plastic verzamelen
 Use the learning platform to solve the exercise.
