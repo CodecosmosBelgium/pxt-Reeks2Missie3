@@ -25,5 +25,6 @@ namespace CodeCosmos {
     export function collectPlastic() {
         agent.destroy(FORWARD);
         player.execute("function levels/collectPlastic");
+        player.say("levelCheck="+levelCheck)
     }
 }
