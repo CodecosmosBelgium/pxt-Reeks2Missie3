@@ -1,31 +1,18 @@
-
-> Open this page at [https://maximvansteenkiste.github.io/pxt-reeks2missie3/](https://maximvansteenkiste.github.io/pxt-reeks2missie3/)
-
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://minecraft.makecode.com/](https://minecraft.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/maximvansteenkiste/pxt-reeks2missie3** and import
-
-## Edit this project ![Build status badge](https://github.com/maximvansteenkiste/pxt-reeks2missie3/workflows/MakeCode/badge.svg)
-
-To edit this repository in MakeCode.
-
-* open [https://minecraft.makecode.com/](https://minecraft.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/maximvansteenkiste/pxt-reeks2missie3** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/maximvansteenkiste/pxt-reeks2missie3/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/minecraft
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+### @hideIteration true
+### @flyoutOnly true
+# Missie 3 (v1.0)
+```blocks
+player.onChat("run", function () {
+    for (let index = 0; index < 4; index++) {
+    }
+CodeCosmos.startingPosition()
+CodeCosmos.agentMoveForward()
+CodeCosmos.collectPlastic()
+```
+```template
+player.onChat("level1", function () {
+CodeCosmos.startingPosition()
+})
+```
+## Velden beplanten
+Use the learning platform to solve the exercise.
