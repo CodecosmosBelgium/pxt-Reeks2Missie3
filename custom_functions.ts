@@ -24,7 +24,7 @@ namespace CodeCosmos {
 
     //% block="agent verzamel plastic"
     export function collectPlastic() {
-        if (agent.inspect(AgentInspection.Block, FORWARD) === YELLOW_WOOL) {
+        if (agent.inspect(AgentInspection.Block, FORWARD) === DIAMOND) {
             levelCheck++;
             agent.destroy(FORWARD);
         } else {
