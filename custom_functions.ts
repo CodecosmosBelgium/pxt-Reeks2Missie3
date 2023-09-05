@@ -18,7 +18,6 @@ namespace CodeCosmos {
             levelCheck = 0;
             player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`)
         }
-        player.execute('scoreboard players set @a levelCheck ' + levelCheck)
         agent.move(FORWARD, 1);
     }
 
