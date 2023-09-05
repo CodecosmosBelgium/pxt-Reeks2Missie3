@@ -16,6 +16,7 @@ namespace CodeCosmos {
             levelCheck++;
         } else {
             levelCheck = 0;
+            player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`)
         }
         player.execute('scoreboard players set @a levelCheck ' + levelCheck)
         agent.move(FORWARD, 1);
@@ -24,7 +25,7 @@ namespace CodeCosmos {
     //% block="agent verzamel plastic"
     export function collectPlastic() {
         agent.destroy(FORWARD);
+        player.say("levelCheck=" + levelCheck)
         player.execute("function levels/collectPlastic");
-        player.say("levelCheck="+levelCheck)
     }
 }
