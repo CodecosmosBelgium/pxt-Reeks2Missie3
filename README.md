@@ -1,4 +1,4 @@
-<!-- ### @hideIteration true -->
+### @hideIteration true
 ### @flyoutOnly true
 # Missie 3 (v1.7)
 ```blocks
