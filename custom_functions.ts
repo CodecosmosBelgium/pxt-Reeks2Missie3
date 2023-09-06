@@ -7,8 +7,8 @@ namespace CodeCosmos {
         amountOfMovesUsed = 0;
         levelCheck = 0;
     }
-
-    //% block="agent beweeg vooruit"
+    
+    //% block="agent beweeg vooruit" color="#D83B01" weight=100
     export function agentMoveForward() {
         amountOfMovesUsed++;
         const detectPostion = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
@@ -22,7 +22,7 @@ namespace CodeCosmos {
         agent.move(FORWARD, 1);
     }
 
-    //% block="agent verzamel plastic"
+    //% block="agent verzamel plastic" color="#D83B01" weight=100
     export function collectPlastic() {
         if (agent.inspect(AgentInspection.Block, FORWARD) === DIAMOND_BLOCK) {
             levelCheck++;
