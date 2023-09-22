@@ -12,7 +12,7 @@ namespace CodeCosmos {
     export function agentMoveForward() {
         amountOfMovesUsed++;
         const detectPostion = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
-        if (blocks.testForBlock(CONCRETE, detectPostion) && !agent.detect(AgentDetection.Block, FORWARD)) {
+        if ((blocks.testForBlock(CONCRETE, detectPostion) || blocks.testForBlock(SANDSTONE, detectPostion)) && !agent.detect(AgentDetection.Block, FORWARD)) {
             levelCheck++;
         } else {
             levelCheck = 0;
