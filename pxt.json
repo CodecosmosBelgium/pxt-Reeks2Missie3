@@ -10,14 +10,15 @@
         "README.md",
         "main.blocks",
         "main.ts",
-        "custom_functions.ts"
+        "custom_functions.ts",
+        "PlasticBlocks.jres"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
     "targetVersions": {
-        "target": "1.6.32",
+        "target": "1.7.25",
         "targetId": "minecraft"
     },
     "supportedTargets": [
