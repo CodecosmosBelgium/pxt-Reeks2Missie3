@@ -57,7 +57,7 @@ namespace CodeCosmos {
 
     //% block="agent verzamel plastic" color="#D83B01" weight=100
     export function collectPlastic() {
-        if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR && levelCheck == 4) {
+        if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR) {
             levelCheck++;
             agent.destroy(FORWARD);
         } else {
