@@ -5,14 +5,14 @@
 player.onChat("run", function () {
     for (let index = 0; index < 4; index++) {
     }
-CodeCosmos.startingPosition()
+
 CodeCosmos.agentMoveForward()
 CodeCosmos.collectPlastic()
 agent.turn(TurnDirection.Left)
 ```
 ```template
 player.onChat("level1", function () {
-CodeCosmos.startingPosition()
+CodeCosmos.collectPlastic()
 })
 ```
 ## Plastic verzamelen

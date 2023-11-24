@@ -43,6 +43,7 @@ namespace CodeCosmos {
     
     //% block="agent beweeg vooruit" color="#D83B01" weight=100
     export function agentMoveForward() {
+        player.execute(`setblock 2392 46 135 air`)
         amountOfMovesUsed++;
         const detectPosition = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
         if (blocks.testForBlock(YELLOW_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(ORANGE_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD)) {
@@ -53,10 +54,12 @@ namespace CodeCosmos {
         }
         player.execute('scoreboard players set @a levelCheck ' + levelCheck)
         agent.move(FORWARD, 1);
+        player.execute(`setblock 2392 46 135 redstone_block`)
     }
 
     //% block="agent verzamel plastic" color="#D83B01" weight=100
     export function collectPlastic() {
+        player.execute(`setblock 2392 46 135 air`)
         if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR) {
             levelCheck++;
             agent.destroy(FORWARD);
@@ -67,5 +70,6 @@ namespace CodeCosmos {
 
         player.execute('scoreboard players set @a levelCheck ' + levelCheck)
         player.execute("function levels/collectPlastic");
+        player.execute(`setblock 2392 46 135 redstone_block`)
     }
 }
