@@ -1,6 +1,7 @@
 ### @hideIteration true
 ### @flyoutOnly true
-# Missie 3
+# Mission 3
+
 ```blocks
 player.onChat("run", function () {
     for (let index = 0; index < 4; index++) {
@@ -10,9 +11,9 @@ CodeCosmos.collectPlastic()
 agent.turn(TurnDirection.Left)
 ```
 ```template
-player.onChat("level1", function () {
+player.onChat("level2", function () {
     CodeCosmos.collectPlastic()
 })
 ```
-## Plastic verzamelen
+## Collect plastic
 Use the learning platform to solve the exercise.

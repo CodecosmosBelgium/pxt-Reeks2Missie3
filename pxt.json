@@ -11,7 +11,12 @@
         "main.blocks",
         "main.ts",
         "custom_functions.ts",
-        "PlasticBlocks.jres"
+        "PlasticBlocks.jres",
+        "t_ex1.md",
+        "t_ex2.md",
+        "t_ex3.md",
+        "t_ex4.md",
+        "t_extra.md"
     ],
     "testFiles": [
         "test.ts"
