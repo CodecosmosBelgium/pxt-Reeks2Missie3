@@ -62,14 +62,13 @@ namespace CodeCosmos {
         player.execute(`setblock 2392 46 135 air`)
         if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR) {
             levelCheck++;
-            agent.destroy(FORWARD);
+            player.execute("function levels/collectPlastic");
         } else {
             levelCheck = 100;
             player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`);
         }
 
         player.execute('scoreboard players set @a levelCheck ' + levelCheck)
-        player.execute("function levels/collectPlastic");
         player.execute(`setblock 2392 46 135 redstone_block`)
     }
 }
