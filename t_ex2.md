@@ -4,12 +4,30 @@
 
 ```blocks
 player.onChat("run", function () {
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 3; index++) {
+        CodeCosmos.agentMoveForward()
+    }
+    agent.turn(TurnDirection.Right)
+    for (let index = 0; index < 2; index++) {
+        CodeCosmos.agentMoveForward()
+    }
+    agent.turn(TurnDirection.Right)
+    for (let index = 0; index < 3; index++) {
+        CodeCosmos.agentMoveForward()
+    }
+    agent.turn(TurnDirection.Left)
+    for (let index = 0; index < 2; index++) {
+        CodeCosmos.agentMoveForward()
+    }
+    agent.turn(TurnDirection.Left)
+    for (let index = 0; index < 3; index++) {
+        CodeCosmos.agentMoveForward()
+    }
+    
+    CodeCosmos.collectPlastic()
 }
-CodeCosmos.agentMoveForward()
-CodeCosmos.collectPlastic()
-agent.turn(TurnDirection.Left)
 ```
+
 ```template
 player.onChat("level2", function () {
     CodeCosmos.collectPlastic()

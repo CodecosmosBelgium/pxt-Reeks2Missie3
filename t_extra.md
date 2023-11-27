@@ -5,11 +5,15 @@
 ```blocks
 player.onChat("run", function () {
     for (let index = 0; index < 4; index++) {
+        
+    }
+
 }
 CodeCosmos.agentMoveForward()
 CodeCosmos.collectPlastic()
 agent.turn(TurnDirection.Left)
 ```
+
 ```template
 player.onChat("extra", function () {
     CodeCosmos.collectPlastic()
