@@ -3,7 +3,7 @@
 # Mission 3
 
 ```blocks
-player.onChat("run", function () {
+player.onChat("extra", function () {
     for (let index = 0; index < 4; index++) {
         
     }

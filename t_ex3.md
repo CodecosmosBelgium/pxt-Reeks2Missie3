@@ -3,7 +3,7 @@
 # Mission 3
 
 ```blocks
-player.onChat("run", function () {
+player.onChat("level3", function () {
     for (let i = 0; i < 2; i++) {
         for (let index = 0; index < 3; index++) {
             CodeCosmos.agentMoveForward()
