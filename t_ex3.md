@@ -4,7 +4,7 @@
 
 ```blocks
 player.onChat("run", function () {
-    for (let index = 0; index < 2; index++) {
+    for (let i = 0; i < 2; i++) {
         for (let index = 0; index < 3; index++) {
             CodeCosmos.agentMoveForward()
         }
