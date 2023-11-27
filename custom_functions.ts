@@ -49,7 +49,7 @@ namespace CodeCosmos {
         if (blocks.testForBlock(YELLOW_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(ORANGE_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD)) {
             levelCheck++;
         } else {
-            levelCheck = 0;
+            levelCheck = 100;
             player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`)
         }
         player.execute('scoreboard players set @a levelCheck ' + levelCheck)
@@ -64,7 +64,7 @@ namespace CodeCosmos {
             levelCheck++;
             agent.destroy(FORWARD);
         } else {
-            levelCheck = 0;
+            levelCheck = 100;
             player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`);
         }
 
