@@ -31,7 +31,7 @@ enum PlasticBlocks {
     YellowPlastic = 983
 }
 
-//% color=190 weight=100 icon="\uf20a block="CodeCosmos""
+//% color=190 weight=100 icon="\uf20a" block="CodeCosmos"
 namespace CodeCosmos {
     //% block="zet agent klaar"
     export function startingPosition() {
