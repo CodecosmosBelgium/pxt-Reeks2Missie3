@@ -33,13 +33,6 @@ enum PlasticBlocks {
 
 //% color=190 weight=100 icon="\uf20a" block="CodeCosmos"
 namespace CodeCosmos {
-    //% block="zet agent klaar"
-    export function startingPosition() {
-        player.execute("function levels/startingPosition")
-        correctPositions = [];
-        amountOfMovesUsed = 0;
-        levelCheck = 0;
-    }
     
     //% block="agent beweeg vooruit" color="#D83B01" weight=100
     export function agentMoveForward() {
@@ -47,12 +40,11 @@ namespace CodeCosmos {
         amountOfMovesUsed++;
         const detectPosition = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
         if (blocks.testForBlock(YELLOW_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(ORANGE_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD)) {
-            levelCheck++;
+            player.execute('scoreboard players add @a levelCheck 1')
         } else {
-            levelCheck = 100;
+            player.execute('scoreboard players add @a levelCheck 100')
             player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`)
         }
-        player.execute('scoreboard players set @a levelCheck ' + levelCheck)
         agent.move(FORWARD, 1);
         player.execute(`setblock 2392 46 135 redstone_block`)
     }
@@ -61,14 +53,13 @@ namespace CodeCosmos {
     export function collectPlastic() {
         player.execute(`setblock 2392 46 135 air`)
         if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR) {
-            levelCheck++;
+            player.execute('scoreboard players add @a levelCheck 1')
             player.execute("function levels/collectPlastic");
         } else {
-            levelCheck = 100;
+            player.execute('scoreboard players add @a levelCheck 100')
             player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`);
         }
 
-        player.execute('scoreboard players set @a levelCheck ' + levelCheck)
         player.execute(`setblock 2392 46 135 redstone_block`)
     }
 }
