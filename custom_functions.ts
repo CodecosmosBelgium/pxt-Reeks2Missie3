@@ -47,6 +47,7 @@ namespace CodeCosmos {
         }
         agent.move(FORWARD, 1);
         player.execute(`setblock 2392 46 135 redstone_block`)
+        loops.pause(50)
     }
 
     //% block="agent verzamel plastic" color="#D83B01" weight=100
@@ -60,7 +61,7 @@ namespace CodeCosmos {
             player.execute('scoreboard players add @a levelCheck 100')
             player.execute(`execute @c ~ ~ ~ particle rwm:barrier ~ ~1 ~`);
         }
-
         player.execute(`setblock 2392 46 135 redstone_block`)
+        loops.pause(50)
     }
 }
