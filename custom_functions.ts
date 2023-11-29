@@ -54,6 +54,7 @@ namespace CodeCosmos {
         player.execute(`setblock 2392 46 135 air`)
         if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR) {
             player.execute('scoreboard players add @a levelCheck 1')
+            agent.interact(FORWARD)
             player.execute('function levels/collectPlastic');
         } else {
             player.execute('scoreboard players add @a levelCheck 100')
