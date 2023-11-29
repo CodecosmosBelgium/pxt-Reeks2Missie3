@@ -1,36 +1,3 @@
-enum PlasticBlocks {
-    //% blockIdentity="blocks.custom" enumval=992 block="Black Plastic"
-    //% jres alias=BLACK_PLASTIC
-    BlackPlastic = 992,
-    //% blockIdentity="blocks.custom" enumval=991 block="Blue Plastic"
-    //% jres alias=BLUE_PLASTIC
-    BluePlastic = 991,
-    //% blockIdentity="blocks.custom" enumval=990 block="Green Plastic"
-    //% jres alias=GREEN_PLASTIC
-    GreenPlastic = 990,
-    //% blockIdentity="blocks.custom" enumval=989 block="Grey Plastic"
-    //% jres alias=GREY_PLASTIC
-    GreyPlastic = 989,
-    //% blockIdentity="blocks.custom" enumval=988 block="Orange Plastic"
-    //% jres alias=ORANGE_PLASTIC
-    OrangePlastic = 988,
-    //% blockIdentity="blocks.custom" enumval=987 block="Pink Plastic"
-    //% jres alias=PINK_PLASTIC
-    PinkPlastic = 987,
-    //% blockIdentity="blocks.custom" enumval=986 block="Purple Plastic"
-    //% jres alias=PURPLE_PLASTIC
-    PurplePlastic = 986,
-    //% blockIdentity="blocks.custom" enumval=985 block="Red Plastic"
-    //% jres alias=RED_PLASTIC
-    RedPlastic = 985,
-    //% blockIdentity="blocks.custom" enumval=984 block="White Plastic"
-    //% jres alias=WHITE_PLASTIC
-    WhitePlastic = 984,
-    //% blockIdentity="blocks.custom" enumval=983 block="Yellow Plastic"
-    //% jres alias=YELLOW_PLASTIC
-    YellowPlastic = 983
-}
-
 //% color=190 weight=100 icon="\uf20a" block="CodeCosmos"
 namespace CodeCosmos {
     
