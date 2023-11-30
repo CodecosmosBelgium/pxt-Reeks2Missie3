@@ -1,6 +1,13 @@
+enum AgentTurn {
+    //% block="left"
+    Left = TurnDirection.Left,
+    //% block="right"
+    Right = TurnDirection.Right
+}
+
+
 //% color=190 weight=100 icon="\uf20a" block="CodeCosmos"
 namespace CodeCosmos {
-    
     //% block="agent beweeg vooruit" color="#D83B01" weight=100
     export function agentMoveForward() {
         player.execute(`setblock 2392 46 135 air`)
@@ -17,6 +24,14 @@ namespace CodeCosmos {
         agent.move(FORWARD, 1);
     }
 
+    //% block="agent turn $direction"
+    export function agentTurn(direction: AgentTurn) {
+        player.execute(`setblock 2392 46 135 air`)
+        loops.pause(50)
+        player.execute(`setblock 2392 46 135 redstone_block`)
+        agent.turn(direction)
+    }
+
     //% block="agent verzamel plastic" color="#D83B01" weight=100
     export function collectPlastic() {
         player.execute(`setblock 2392 46 135 air`)
@@ -24,7 +39,6 @@ namespace CodeCosmos {
         player.execute(`setblock 2392 46 135 redstone_block`)
         if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR) {
             player.execute('scoreboard players add @a levelCheck 1')
-            agent.interact(FORWARD)
             player.execute('function levels/collectPlastic');
         } else {
             player.execute('scoreboard players add @a levelCheck 100')

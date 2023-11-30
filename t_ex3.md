@@ -8,17 +8,17 @@ player.onChat("level3", function () {
         for (let index = 0; index < 3; index++) {
             CodeCosmos.agentMoveForward()
         }
-        agent.turn(TurnDirection.Left)
+        CodeCosmos.agentTurn(AgentTurn.Left)
         for (let index = 0; index < 2; index++) {
             CodeCosmos.agentMoveForward()
         }
-        agent.turn(TurnDirection.Left)
+        CodeCosmos.agentTurn(AgentTurn.Left)
         for (let index = 0; index < 3; index++) {
             CodeCosmos.agentMoveForward()
         }
         CodeCosmos.collectPlastic()
-        agent.turn(TurnDirection.Left)
-        agent.turn(TurnDirection.Left)
+        CodeCosmos.agentTurn(AgentTurn.Left)
+        CodeCosmos.agentTurn(AgentTurn.Left)
     }
 }
 ```

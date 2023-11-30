@@ -7,19 +7,19 @@ player.onChat("level2", function () {
     for (let index = 0; index < 3; index++) {
         CodeCosmos.agentMoveForward()
     }
-    agent.turn(TurnDirection.Right)
+    CodeCosmos.agentTurn(AgentTurn.Right)
     for (let index = 0; index < 2; index++) {
         CodeCosmos.agentMoveForward()
     }
-    agent.turn(TurnDirection.Right)
+    CodeCosmos.agentTurn(AgentTurn.Right)
     for (let index = 0; index < 3; index++) {
         CodeCosmos.agentMoveForward()
     }
-    agent.turn(TurnDirection.Left)
+    CodeCosmos.agentTurn(AgentTurn.Left)
     for (let index = 0; index < 2; index++) {
         CodeCosmos.agentMoveForward()
     }
-    agent.turn(TurnDirection.Left)
+    CodeCosmos.agentTurn(AgentTurn.Left)
     for (let index = 0; index < 3; index++) {
         CodeCosmos.agentMoveForward()
     }

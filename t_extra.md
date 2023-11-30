@@ -11,7 +11,7 @@ player.onChat("extra", function () {
 }
 CodeCosmos.agentMoveForward()
 CodeCosmos.collectPlastic()
-agent.turn(TurnDirection.Left)
+CodeCosmos.agentTurn(AgentTurn.Left)
 ```
 
 ```template

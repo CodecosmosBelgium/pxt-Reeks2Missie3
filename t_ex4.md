@@ -6,16 +6,16 @@
 player.onChat("level4", function () {
     for (let index = 0; index < 4; index++) {
         CodeCosmos.agentMoveForward()
-        agent.turn(TurnDirection.Left)
+        CodeCosmos.agentTurn(AgentTurn.Left)
         CodeCosmos.agentMoveForward()
         CodeCosmos.collectPlastic()
-        agent.turn(TurnDirection.Right)
+        CodeCosmos.agentTurn(AgentTurn.Right)
     }
     
     for (let index = 0; index < 4; index++) {
-        agent.turn(TurnDirection.Right)
+        CodeCosmos.agentTurn(AgentTurn.Right)
         CodeCosmos.agentMoveForward()
-        agent.turn(TurnDirection.Left)
+        CodeCosmos.agentTurn(AgentTurn.Left)
         CodeCosmos.agentMoveForward()
         CodeCosmos.collectPlastic()
     }
