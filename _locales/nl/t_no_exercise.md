@@ -1,6 +1,6 @@
 ### @hideIteration true
 ### @flyoutOnly true
-# Mission 3
+# Missie 3
 ```blocks
 
 ```
@@ -9,5 +9,5 @@
 
 ```
 
-## No exercise
-There is no exercise.
+## Geen oefening
+Er is geen oefening.

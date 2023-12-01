@@ -16,5 +16,6 @@ player.onChat("level1", function () {
     CodeCosmos.collectPlastic()
 })
 ```
+
 ## Collect plastic
 Use the learning platform to solve the exercise.

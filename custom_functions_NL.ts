@@ -1,14 +1,14 @@
-enum AgentTurn {
-    //% block="left"
+enum AgentTurn_NL {
+    //% block="links"
     Left = TurnDirection.Left,
-    //% block="right"
+    //% block="rechts"
     Right = TurnDirection.Right
 }
 
 
 //% color=190 weight=100 icon="\uf20a" block="CodeCosmos"
-namespace CodeCosmos {
-    //% block="agent move forward" color="#D83B01" weight=50
+namespace CodeCosmos_NL {
+    //% block="agent beweeg vooruit" color="#D83B01" weight=50
     export function agentMoveForward() {
         player.execute(`setblock 2392 46 135 air`)
         loops.pause(50)
@@ -23,7 +23,7 @@ namespace CodeCosmos {
         agent.move(FORWARD, 1);
     }
 
-    //% block="agent turn $direction" color="#D83B01" weight=49
+    //% block="agent draai $direction" color="#D83B01" weight=49
     export function agentTurn(direction: AgentTurn) {
         player.execute(`setblock 2392 46 135 air`)
         loops.pause(50)
@@ -31,7 +31,7 @@ namespace CodeCosmos {
         agent.turn(direction)
     }
 
-    //% block="agent collect plastic" color="#D83B01" weight=48
+    //% block="agent verzamel plastic" color="#D83B01" weight=48
     export function collectPlastic() {
         player.execute(`setblock 2392 46 135 air`)
         loops.pause(50)
