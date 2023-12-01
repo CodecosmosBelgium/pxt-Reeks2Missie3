@@ -10,7 +10,7 @@ namespace CodeCosmos_NL {
     //% block="agent beweeg vooruit" color="#D83B01" weight=50
     export function agentMoveForward() {
         player.execute(`setblock 2392 46 135 air`)
-        loops.pause(50)
+        loops.pause(10)
         player.execute(`setblock 2392 46 135 redstone_block`)
         const detectPosition = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
         if (blocks.testForBlock(YELLOW_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(ORANGE_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD)) {
@@ -25,7 +25,7 @@ namespace CodeCosmos_NL {
     //% block="agent draai $direction" color="#D83B01" weight=49
     export function agentTurn(direction: AgentTurn_NL) {
         player.execute(`setblock 2392 46 135 air`)
-        loops.pause(50)
+        loops.pause(10)
         player.execute(`setblock 2392 46 135 redstone_block`)
         agent.turn(direction)
     }
@@ -33,7 +33,7 @@ namespace CodeCosmos_NL {
     //% block="agent verzamel plastic" color="#D83B01" weight=48
     export function collectPlastic() {
         player.execute(`setblock 2392 46 135 air`)
-        loops.pause(50)
+        loops.pause(10)
         player.execute(`setblock 2392 46 135 redstone_block`)
         if (agent.inspect(AgentInspection.Block, FORWARD) != GLASS && agent.inspect(AgentInspection.Block, FORWARD) != AIR) {
             player.execute('scoreboard players add @a levelCheck 1')
