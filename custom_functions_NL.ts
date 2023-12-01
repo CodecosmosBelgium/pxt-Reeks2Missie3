@@ -23,7 +23,7 @@ namespace CodeCosmos_NL {
     }
 
     //% block="agent draai $direction" color="#D83B01" weight=49
-    export function agentTurn(direction: AgentTurn) {
+    export function agentTurn(direction: AgentTurn_NL) {
         player.execute(`setblock 2392 46 135 air`)
         loops.pause(50)
         player.execute(`setblock 2392 46 135 redstone_block`)
