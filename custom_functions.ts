@@ -5,7 +5,6 @@ enum AgentTurn {
     Right = TurnDirection.Right
 }
 
-
 //% color=190 weight=100 icon="\uf20a" block="CodeCosmos"
 namespace CodeCosmos {
     //% block="agent move forward" color="#D83B01" weight=50
