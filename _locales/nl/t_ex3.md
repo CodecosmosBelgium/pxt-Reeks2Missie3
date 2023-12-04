@@ -25,7 +25,7 @@ player.onChat("level3", function () {
 
 ```template
 player.onChat("level3", function () {
-    CodeCosmos_NL.collectPlastic()
+    
 })
 ```
 

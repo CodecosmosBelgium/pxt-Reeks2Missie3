@@ -30,7 +30,7 @@ player.onChat("level2", function () {
 
 ```template
 player.onChat("level2", function () {
-    CodeCosmos_NL.collectPlastic()
+    
 })
 ```
 
