@@ -13,7 +13,7 @@ namespace CodeCosmos {
         loops.pause(10)
         player.execute(`setblock 2392 46 135 redstone_block`)
         const detectPosition = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
-        if (blocks.testForBlock(YELLOW_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(ORANGE_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD)) {
+        if (blocks.testForBlock(YELLOW_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(ORANGE_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(GRAY_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD) || blocks.testForBlock(LIGHT_GRAY_CONCRETE, detectPosition) && !agent.detect(AgentDetection.Block, FORWARD)) {
             player.execute('scoreboard players add @a levelCheck 1')
         } else {
             player.execute('scoreboard players add @a levelCheck 100')
