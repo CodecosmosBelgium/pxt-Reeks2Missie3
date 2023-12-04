@@ -19,7 +19,6 @@ player.onChat("level4", function () {
         CodeCosmos.agentMoveForward()
         CodeCosmos.collectPlastic()
     }
-    
 }
 ```
 
