@@ -13,7 +13,7 @@ player.onChat("ExtraLevel2", function () {
 ```
 
 ```template
-player.onChat("extra", function () {
+player.onChat("ExtraLevel2", function () {
     
 })
 ```
