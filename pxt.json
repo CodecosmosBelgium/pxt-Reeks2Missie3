@@ -22,7 +22,9 @@
         "_locales/nl/t_ex3.md",
         "_locales/nl/t_ex4.md",
         "_locales/nl/t_extra.md",
-        "_locales/nl/t_no_exercise.md"
+        "_locales/nl/t_no_exercise.md",
+        "t_extra2.md",
+        "_locales/nl/t_extra2.md"
     ],
     "testFiles": [
         "test.ts"

@@ -3,7 +3,7 @@
 # Mission 3
 
 ```blocks
-player.onChat("ExtraLevel1", function () {
+player.onChat("ExtraLevel2", function () {
     for (let index = 0; index < 4; index++) {
             CodeCosmos.agentMoveForward()
             CodeCosmos.collectPlastic()
